@@ -1,0 +1,40 @@
+/*this is the big card on the right where all other smaller cards are*/
+.community-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    min-width: 100%;  
+  }
+  
+  .community-card:hover {
+    background-color: #f8f8f8;
+  }
+  
+  .community-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .community-name {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  
+  @media (max-width: 500px) {
+    .community-card {
+      width: 100%;
+    }
+  }
+  

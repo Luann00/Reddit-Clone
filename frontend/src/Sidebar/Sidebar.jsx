@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import CommunityCard from "../Community/CommunityCard";
+import CommunityCard from "../CommunityCard/CommunityCard";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const [communities, setCommunities] = useState([
@@ -12,10 +13,10 @@ const Sidebar = () => {
   ]);
 
   return (
-    <div className="sidebar">
-      <div className="sidebar-header">Popular communities</div>
-      {communities.map((community) => (
-        <CommunityCard key={community} communityName={community} />
+    <div className="sidebar-container">
+      <strong className="sidebar-header">Popular communities</strong>
+      {communities.map((community, index) => (
+        <CommunityCard key={index} communityName={community} />
       ))}
     </div>
   );
