@@ -15,6 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/posts")
+@CrossOrigin(origins = "http://localhost:3000") // Allow cross-origin requests from your frontend
 public class PostController {
 
     private final PostService postService;
