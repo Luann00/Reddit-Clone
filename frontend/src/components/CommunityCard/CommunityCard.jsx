@@ -1,5 +1,5 @@
 import React from "react";
-import Red_Color from '../Assets/Red_Color.jpg'
+import Red_Color from '../../Assets/Red_Color.jpg'
 import './CommunityCard.css';
 
 //This is for the community card on the left side.

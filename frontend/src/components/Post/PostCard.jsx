@@ -1,9 +1,12 @@
 import React from "react";
 import "./PostCard.css";
-import photo from '../Assets/mock-photo.jpg';
+import photo from '../../Assets/mock-photo.jpg';
 
 /*This is the post card where the post details are shown for the user */
 const PostCard = () => {
+  const testMethod1 = () => alert("test1")
+  const testMethod2 = () => alert("test2")
+
   return (
     <div className="post-card">
       <div className="post-header">
@@ -24,8 +27,8 @@ const PostCard = () => {
           <p className="post-comments">42 Comments</p>
           <div className="post-upvotes">
             <span className="upvote-count">1,232</span>
-            <button className="upvote-button">&#8593;</button> 
-            <button className="downvote-button">&#8595;</button>
+            <button className="upvote-button" onClick={testMethod1}>&#8593;</button> 
+            <button className="downvote-button" onClick={testMethod2}>&#8595;</button>
           </div>
         </div>
       </div>
