@@ -5,7 +5,7 @@ import com.backend.backend.entity.User;
 import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-    Optional<User> findByFullName(String username);
+    Optional<User> findByName(String username);
     Optional<User> findByEmail(String email);
 }
 

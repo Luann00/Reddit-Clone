@@ -1,10 +1,10 @@
 package com.backend.backend.dtos;
 
 public class RegisterUserDto {
-    public RegisterUserDto(String email, String password, String fullname) {
+    public RegisterUserDto(String email, String password, String name) {
         this.email = email;
         this.password = password;
-        this.fullname = fullname;
+        this.name = name;
     }
 
     public String getEmail() {
@@ -23,17 +23,17 @@ public class RegisterUserDto {
         this.password = password;
     }
 
-    public String getFullName() {
-        return fullname;
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullname = fullName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     private String email;
 
     private String password;
 
-    private String fullname;
+    private String name;
 }

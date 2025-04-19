@@ -7,13 +7,11 @@ import com.backend.backend.responses.LoginResponse;
 import com.backend.backend.service.AuthenticationService;
 import com.backend.backend.service.JwtService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/auth")
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class AuthenticationController {
     private final JwtService jwtService;
 
